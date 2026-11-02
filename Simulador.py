@@ -8,9 +8,8 @@ class Proceso:
     self.memoria = memoria
     self.estado = estado
 #agregar: tiempo de retorno, tiempo de espera,
-    self.TR = 0. # TR =  T_fin – TA, siendo TA= tiempo de arribo
-    self.TE = 0. # TE = TR – TI, donde TI es la duración de la ráfaga de CPU requerida).
-
+    self.TR = 0. # TR = TA + TE.
+    self.TE = 0. # TE = TR - TA.
       
 p1 = Proceso(3, 5, 20, "nuevo")
 # entonces en el arcivo solo estan cargados como columnas: P1 3 5 20 , el "nuevo" agregaria yo. 
